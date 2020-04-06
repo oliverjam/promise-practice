@@ -34,3 +34,27 @@ Open `workshop/challenge-one.js` in your editor. It contains a function `getUser
 Implement the `addReposToUser` function: it should receive a user object, fetch that user's repos using `api.getRepos`, then resolve with a new user object with an extra `repos` property.
 
 You can run the tests with `npm run test:one`—they should all pass when you're done.
+
+## Creating promises
+
+You can create your own promise objects with `new Promise()`. You have to pass in a function that defines when the promise will resolve or reject. This function is passed two arguments: `resolve` and `reject`. These are functions you call with the value you want to resolve/reject with.
+
+For example:
+
+```js
+function doesSomethingAsync(ms) {
+  const promise = new Promise((resolve, reject) => {
+    // do some stuff
+    reject(new Error("it broke"));
+    // or
+    resolve("It worked!");
+  });
+  return promise;
+}
+```
+
+## Challenge two
+
+You're going to create your own promisified wrapper of Node's `fs.readFile` method. It usually takes a callback to be run when it finishes its asynchronous task. Implement the `readFilePromise` function so that it returns a new promise. It should use `fs.readFile` to read whatever file path is passed in, then resolve with the result. It should reject with any error that occurred.
+
+You can run the tests with `npm run test:two`.
