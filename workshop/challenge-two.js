@@ -2,18 +2,10 @@ const fs = require("fs");
 const path = require("path");
 const test = require("tape");
 
-// CHALLENGE TWO
+// CHALLENGE TWO:
 function readFilePromise(filePath) {
-  const promise = new Promise((resolve, reject) => {
-    fs.readFile(filePath, (error, contents) => {
-      if (error) {
-        reject(error);
-      } else {
-        resolve(contents);
-      }
-    });
-  });
-  return promise;
+  // REPLACE THIS WITH YOUR CODE
+  return {};
 }
 
 // TESTS
