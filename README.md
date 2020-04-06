@@ -2,7 +2,7 @@
 
 Let's practice using and creating promises.
 
-## Using promises recap
+## Using promises recap
 
 A promise is an object that _represents_ the eventual result of an some asynchronous code. A function that needs to do some asynchronous work (e.g. fetching data from an API on another website) can _return_ a promise object, which is its "promise" to you that you will eventually get a result.
 
@@ -27,7 +27,7 @@ fetch("some-url.com")
 
 A single `.catch` will catch all rejections from a promise chain, which means you can handle errors in one place. You can't chain catches since the promise chain stops once it hits a rejection.
 
-## Challenge one
+### Challenge one
 
 Open `workshop/challenge-one.js` in your editor. It contains a function `getUsersWithRepos` that fetches a user by name, then passes the result to the `addReposToUser` function.
 
@@ -53,7 +53,7 @@ function doesSomethingAsync(ms) {
 }
 ```
 
-## Challenge two
+### Challenge two
 
 You're going to create your own promisified wrapper of Node's `fs.readFile` method. It usually takes a callback to be run when it finishes its asynchronous task. Implement the `readFilePromise` function so that it returns a new promise. It should use `fs.readFile` to read whatever file path is passed in, then resolve with the result. It should reject with any error that occurred.
 
