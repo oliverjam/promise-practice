@@ -36,7 +36,7 @@ A single `.catch` will catch all rejections from a promise chain, which means yo
 
 Open `workshop/challenge-one.js` in your editor. It contains a function `getUsersWithRepos` that fetches a user by name, then passes the result to the `addReposToUser` function.
 
-Implement the `addReposToUser` function: it should receive a user object, fetch that user's repos using `api.getRepos`, then resolve with a new user object with an extra `repos` property.
+Implement the `addReposToUser` function: it should receive a user object, fetch that user's repos using `api.getRepos` (which takes a user's ID as an argument), then resolve with a new user object with an extra `repos` property.
 
 You can run the tests with `npm run test:one`—they should all pass when you're done.
 
