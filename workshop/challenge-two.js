@@ -36,7 +36,7 @@ test("readFilePromise reads a file correctly", (t) => {
 test("readFilePromise rejects if an error occurs", (t) => {
   readFilePromise("notReal.psd")
     .then(() => {
-      t.fail("Nonexistent path should cause readFilePromise to reject");
+      t.fail("Nonexistent file should cause readFilePromise to reject");
       t.end();
     })
     .catch((error) => {
