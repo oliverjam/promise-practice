@@ -2,6 +2,11 @@
 
 Let's practice using and creating promises.
 
+## Setup
+
+1. Clone this repo
+1. Run `npm install` to install dependencies
+
 ## Using promises
 
 A promise is an object that _represents_ the eventual result of an some asynchronous code. A function that needs to do some asynchronous work (e.g. fetching data from an API on another website) can _return_ a promise object, which is its "promise" to you that you will eventually get a result.
