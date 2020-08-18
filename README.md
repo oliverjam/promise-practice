@@ -60,6 +60,6 @@ function doesSomethingAsync(ms) {
 
 ### Challenge two
 
-You're going to create your own promisified wrapper of Node's `fs.readFile` method. It usually takes a callback to be run when it finishes its asynchronous task. Implement the `readFilePromise` function so that it returns a new promise. It should use `fs.readFile` to read whatever file path is passed in, then resolve with the result. It should reject with any error that occurred.
+You're going to create your own promisified wrapper of Node's [`fs.readFile`](https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback) method. It usually takes a callback to be run when it finishes its asynchronous task. Implement the `readFilePromise` function so that it returns a new promise. It should use `fs.readFile` to read whatever file path is passed in, then resolve with the result. It should reject with any error that occurred.
 
 You can run the tests with `npm run test:two`.
